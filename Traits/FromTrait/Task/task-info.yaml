@@ -1,0 +1,30 @@
+type: output
+files:
+  - name: src/main.rs
+    visible: true
+    placeholders:
+      - offset: 229
+        length: 0
+        placeholder_text: /* TODO */
+        initial_state:
+          length: 10
+          offset: 131
+        initialized_from_dependency: false
+        encrypted_possible_answer: dSuDmjBhl+a9msNI+09IitCtYwKnANizXQMb+h2r+wL8yJ4oAsTg4VzoQUfKwU4qOkABviGV1IApGtth3wp2V6QK631PPMtZHhcaQ8AwhWfYnav81tmiv/Xr+7NwnSqjw08RgFTnCcAKDPlPVibbyw==
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: Cargo.toml
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+  - name: tests/input.txt
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 07 Oct 2026 16:44:33 UTC"
+record: -1

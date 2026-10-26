@@ -1,0 +1,27 @@
+type: edu
+files:
+  - name: src/lib.rs
+    visible: true
+    placeholders:
+      - offset: 493
+        length: 0
+        placeholder_text: /* TODO */
+        initial_state:
+          length: 10
+          offset: 493
+        initialized_from_dependency: false
+        encrypted_possible_answer: +7KblqM9eLLzJVB50xk8sg==
+        selected: false
+        status: Solved
+    learner_created: false
+  - name: Cargo.toml
+    visible: false
+    learner_created: false
+  - name: tests/tests.rs
+    visible: true
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 02 Oct 2026 17:17:19 UTC"
+record: -1

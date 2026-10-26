@@ -1,0 +1,140 @@
+type: edu
+files:
+  - name: src/lib.rs
+    visible: true
+    placeholders:
+      - offset: 280
+        length: 7
+        placeholder_text: todo!()
+        initial_state:
+          length: 7
+          offset: 280
+        initialized_from_dependency: false
+        encrypted_possible_answer: xHBTFU1YweJ2JMwrvk3Sw2J5tusNlTrvtlpS+ExYLDQ=
+        selected: false
+        status: Unchecked
+      - offset: 382
+        length: 7
+        placeholder_text: todo!()
+        initial_state:
+          length: 7
+          offset: 382
+        initialized_from_dependency: false
+        encrypted_possible_answer: qoXBPDxe+4S5/6Gko0d1tQ==
+        selected: false
+        status: Unchecked
+      - offset: 401
+        length: 7
+        placeholder_text: todo!()
+        initial_state:
+          length: 7
+          offset: 401
+        initialized_from_dependency: false
+        encrypted_possible_answer: +9rTitUBsLdg1Nl+WGow/o12gGqrunfwM7SgYE9pigNYE3BgNrkS5ZH6NeTieRrn/c94yry5qSp0bQKEXEouuT4yFJrhfNVrRi3nMoFLY+WG5HZ4kXJN+5nkXvhEL5YkW1+KZI/Ye2WpG+O/dpR7mG3U2iPFK15fwGxDc13dA+ETh7P8xp1KWgqiIekyk6L7ddHin7MSSulVuMKKrF/uQmOQy7RUwuvU0ou0S4OwNjtPSo6jyiJLO0Vk8Rc8pGScMPmA37CfRUoKNYg7AszkUiPP0ixR6h+fQqdN6A91pQkq2z8gVsvYiX90/SVx4DWjkh/2GWsbZzLHLK7+w/8L5GCAUH8a3iUbMym4td9yshHC5KWHtQov5YC6qBVjorA7Sn4JJFaPe3oW0QiF3YLtlj7Lvo19GIdjj0Hk8dpd86A=
+        selected: false
+        status: Unchecked
+      - offset: 478
+        length: 7
+        placeholder_text: todo!()
+        initial_state:
+          length: 7
+          offset: 478
+        initialized_from_dependency: false
+        encrypted_possible_answer: qoXBPDxe+4S5/6Gko0d1tQ==
+        selected: false
+        status: Unchecked
+      - offset: 497
+        length: 7
+        placeholder_text: todo!()
+        initial_state:
+          length: 7
+          offset: 497
+        initialized_from_dependency: false
+        encrypted_possible_answer: +9rTitUBsLdg1Nl+WGow/o12gGqrunfwM7SgYE9pigNYE3BgNrkS5ZH6NeTieRrn/c94yry5qSp0bQKEXEouuT4yFJrhfNVrRi3nMoFLY+WG5HZ4kXJN+5nkXvhEL5YkW1+KZI/Ye2WpG+O/dpR7mG3U2iPFK15fwGxDc13dA+El9haBnrQdjwXTOgHjJFYPKSKc5yWPGyeBjN6hh/kpdZ7q1qPjSx22NorrcYnGV0HuYlMBOS26qh4jbm+M21FBmM6kMqsQp98tVIJJcRDJvKRilE5vpYPkk4JGw5TdEVFZzmoGeKYsBXsw40PE/M4sDiXTxmY9iU7DbdRk82qdhFtfh/jvQxlG/x5SGREPWsUBJqwTmR59O4AViIPPbEmBecySH7nzDWfG3FpeJwJVOSvkx3eYW6n++3yROS5NJW4=
+        selected: false
+        status: Unchecked
+      - offset: 514
+        length: 10
+        placeholder_text: /* TODO */
+        initial_state:
+          length: 10
+          offset: 514
+        initialized_from_dependency: false
+        encrypted_possible_answer: rI2CgUVE9RtmedI5+2w1drKzY15KF7RR4nu2ikw4yWm9B4LF7h5UWyFgH/EeUcObb/RGtjukiEprd3LMNAhabdJeJguK6jsbxJfg1F2QCbr9QxftWnxsYCiu7JKNXd/LYV+kj/y75+MpSYIyttf3oQ==
+        selected: false
+        status: Unchecked
+      - offset: 584
+        length: 10
+        placeholder_text: /* TODO */
+        initial_state:
+          length: 10
+          offset: 584
+        initialized_from_dependency: false
+        encrypted_possible_answer: XDCHuO3HOVglCAptxGcukXHibyVtd6MQu7ISfl7iYtxVurnZowv8qQtHsG2T901Mb1L4u0csSm3LTSSNHSv4mHyHTprEZeiunqSgK8a4wV8=
+        selected: false
+        status: Unchecked
+      - offset: 649
+        length: 10
+        placeholder_text: /* TODO */
+        initial_state:
+          length: 10
+          offset: 649
+        initialized_from_dependency: false
+        encrypted_possible_answer: dpR4iqJFdhFXuY9YqgQ0UaDMVjOqqjYk315gS0neUSo=
+        selected: false
+        status: Unchecked
+      - offset: 745
+        length: 7
+        placeholder_text: todo!()
+        initial_state:
+          length: 7
+          offset: 745
+        initialized_from_dependency: false
+        encrypted_possible_answer: 7lTufXn5fQONOiZZWELxy7vsTSgmMUeyt7EknIy8SlE=
+        selected: false
+        status: Unchecked
+      - offset: 819
+        length: 7
+        placeholder_text: todo!()
+        initial_state:
+          length: 7
+          offset: 819
+        initialized_from_dependency: false
+        encrypted_possible_answer: 0CMWBwlDWfre/3D8ttTaR11Rm3uHpwdPERVq1//hxC8=
+        selected: false
+        status: Unchecked
+      - offset: 1138
+        length: 7
+        placeholder_text: todo!()
+        initial_state:
+          length: 7
+          offset: 1138
+        initialized_from_dependency: false
+        encrypted_possible_answer: kces3KQNwQpAS/l9Wlx72thWeSGg1RzzGYzWMQ3WCj6v8UZUwsKFC29zxfKwc25m
+        selected: false
+        status: Unchecked
+      - offset: 1324
+        length: 7
+        placeholder_text: todo!()
+        initial_state:
+          length: 7
+          offset: 1324
+        initialized_from_dependency: false
+        encrypted_possible_answer: kces3KQNwQpAS/l9Wlx72g0Pcoldm6hyGuF90AE9gkCFgg2B5bZ2rdYFW21YEPgL
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: Cargo.toml
+    visible: false
+    learner_created: false
+  - name: tests/tests.rs
+    visible: true
+    learner_created: false
+  - name: src/store.rs
+    visible: true
+    learner_created: false
+  - name: src/data.rs
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1

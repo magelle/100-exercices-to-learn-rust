@@ -1,0 +1,70 @@
+type: edu
+files:
+  - name: src/lib.rs
+    visible: true
+    placeholders:
+      - offset: 118
+        length: 3
+        placeholder_text: /* TODO */
+        initial_state:
+          length: 10
+          offset: 118
+        initialized_from_dependency: false
+        encrypted_possible_answer: Ek5n1xVO6F+uh3wYJynyng==
+        selected: false
+        status: Solved
+      - offset: 139
+        length: 3
+        placeholder_text: /* TODO */
+        initial_state:
+          length: 10
+          offset: 146
+        initialized_from_dependency: false
+        encrypted_possible_answer: Ek5n1xVO6F+uh3wYJynyng==
+        selected: true
+        status: Solved
+      - offset: 280
+        length: 3
+        placeholder_text: /* TODO */
+        initial_state:
+          length: 10
+          offset: 282
+        initialized_from_dependency: false
+        encrypted_possible_answer: Ek5n1xVO6F+uh3wYJynyng==
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: Cargo.toml
+    visible: false
+    learner_created: false
+  - name: tests/tests.rs
+    visible: true
+    placeholders:
+      - offset: 1155
+        length: 48
+        placeholder_text: "assert_eq!(ticket.description, \"A description\");"
+        initial_state:
+          length: 48
+          offset: 1155
+        initialized_from_dependency: false
+        encrypted_possible_answer: EOTOO/5n26iaIkmoLM+7mS//mjdbPxsGLvQjvFp1xHbcgQ83lJZwd4WXS7eFoofHNDAm5/ZuExt0GF59Jg0Olg==
+        selected: true
+        status: Solved
+      - offset: 1860
+        length: 126
+        placeholder_text: "let ticket = Ticket {  \n\t\t\t title: \"A title\".into(),\n\
+      \t\t\t description: \"A description\".into(),\n\t\t\t status: \"To-Do\".into()\
+      \ \n\t\t};"
+        initial_state:
+          length: 126
+          offset: 1860
+        initialized_from_dependency: false
+        encrypted_possible_answer: uSvVUbcBDR3MnUPUTrev87/o/03CRnVs/4/Q0NgPc4dzGWNU27KbcTpjoTsub9/JrDX8o8B0N/hg4/RSMoPeKTU+GTLHymB9iXkuNHKMhnKCtB6Uc5/mQrMAzhRSG6r6nQuZKjiMVFV52Tgs3WA3ufpW59GVE73wGPbxW+kCmDVtE0qlGtv+lzzC5G/6FCV0DwJ/SjVTksk0VWPxi+hKDFNtXHKFw5mO190onHzese4=
+        selected: false
+        status: Solved
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 28 Sep 2026 12:17:28 UTC"
+record: -1
