@@ -1,0 +1,12 @@
+/Users/max/RustroverProjects/100 Exercises to Learn Rust/target/debug/deps/thiserror-f86896b9eef21258.d: /Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/lib.rs /Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/aserror.rs /Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/display.rs /Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/var.rs /Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/private.rs /Users/max/RustroverProjects/100\ Exercises\ to\ Learn\ Rust/target/debug/build/thiserror-6551b33e1a882c09/out/private.rs
+
+/Users/max/RustroverProjects/100 Exercises to Learn Rust/target/debug/deps/libthiserror-f86896b9eef21258.rmeta: /Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/lib.rs /Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/aserror.rs /Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/display.rs /Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/var.rs /Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/private.rs /Users/max/RustroverProjects/100\ Exercises\ to\ Learn\ Rust/target/debug/build/thiserror-6551b33e1a882c09/out/private.rs
+
+/Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/lib.rs:
+/Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/aserror.rs:
+/Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/display.rs:
+/Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/var.rs:
+/Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/private.rs:
+/Users/max/RustroverProjects/100\ Exercises\ to\ Learn\ Rust/target/debug/build/thiserror-6551b33e1a882c09/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/max/RustroverProjects/100 Exercises to Learn Rust/target/debug/build/thiserror-6551b33e1a882c09/out

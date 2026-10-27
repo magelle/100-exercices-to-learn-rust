@@ -3,7 +3,16 @@
 //   "Description not provided".
 
 pub fn easy_ticket(title: String, description: String, status: Status) -> Ticket {
-    /* TODO */
+    match Ticket::new(title.clone(), description, status.clone()) {
+        Ok(ticket) => ticket,
+        Err(e) => {
+            if e.contains("Description") {
+                Ticket::new(title, "Description not provided".to_string(), status).unwrap()
+            } else {
+                panic!("{e}");
+            }
+        }
+    }
 }
 
 #[derive(Debug, PartialEq, Clone)]
