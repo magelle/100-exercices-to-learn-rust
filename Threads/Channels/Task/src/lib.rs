@@ -6,7 +6,7 @@ pub mod data;
 pub mod store;
 
 pub enum Command {
-    Insert(todo!()),
+    Insert(TicketDraft),
 }
 
 // Start the system by spawning the server thread.
@@ -23,5 +23,13 @@ pub fn launch() -> Sender<Command> {
 //  the channel, then execute it, then start waiting
 //  for the next command.
 pub fn server(receiver: Receiver<Command>) {
-    /* TODO */
+    let mut store = TicketStore::new();
+    while let Ok(command) = receiver.recv() {
+        match command {
+            Command::Insert(ticket_draft) => {
+                store.add_ticket(ticket_draft);
+            }
+        }
+    }
 }
+

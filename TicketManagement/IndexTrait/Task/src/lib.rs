@@ -59,6 +59,18 @@ impl TicketStore {
     }
 }
 
-/* TODO */
+impl Index<&TicketId> for TicketStore {
+    type Output = Ticket;
 
-/* TODO */
+    fn index(&self, index: &TicketId) -> &Self::Output {
+        &self[*index]
+    }
+}
+
+impl Index<TicketId> for TicketStore {
+    type Output = Ticket;
+
+    fn index(&self, index: TicketId) -> &Self::Output {
+        self.get(index).unwrap()
+    }
+}
