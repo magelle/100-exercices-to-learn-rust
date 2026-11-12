@@ -1,42 +1,56 @@
 // TODO: Convert the implementation to use bounded channels.
 use crate::data::{Ticket, TicketDraft};
 use crate::store::{TicketId, TicketStore};
-use std::sync::mpsc::{Receiver, SyncSender};
+use std::sync::mpsc::{sync_channel, Receiver, RecvError, SyncSender};
 
 pub mod data;
 pub mod store;
 
 #[derive(Clone)]
 pub struct TicketStoreClient {
-    sender: todo!(),
+    sender: SyncSender<Command>,
 }
 
 impl TicketStoreClient {
-    pub fn insert(&self, draft: TicketDraft) -> Result<TicketId, todo!()> {
-        todo!()
+    pub fn insert(&self, draft: TicketDraft) -> Result<TicketId, RecvError> {
+        let (sender, receiver) = sync_channel(1);
+        let cmd = Command::Insert {
+            draft,
+            response_channel: sender,
+        };
+        self.sender.try_send(cmd).map_err(|_| OverloadedError);
+        Ok(receiver.recv().unwrap())
     }
 
-    pub fn get(&self, id: TicketId) -> Result<Option<Ticket>, todo!()> {
-        todo!()
+    pub fn get(&self, id: TicketId) -> Result<Option<Ticket>, RecvError> {
+        let (sender, receiver) = sync_channel(1);
+        let cmd = Command::Get {
+            id,
+            response_channel: sender,
+        };
+        self.sender.try_send(cmd).map_err(|_| OverloadedError);
+        Ok(receiver.recv().unwrap())
     }
 }
 
-/* TODO */
+#[derive(Debug, thiserror::Error)]
+#[error("The store is overloaded")]
+pub struct OverloadedError;
 
 pub fn launch(capacity: usize) -> TicketStoreClient {
-    /* TODO */
+    let (sender, receiver) = sync_channel(capacity);
     std::thread::spawn(move || server(receiver));
-    /* TODO */
+    TicketStoreClient { sender }
 }
 
 enum Command {
     Insert {
         draft: TicketDraft,
-        response_channel: todo!(),
+        response_channel: SyncSender<TicketId>,
     },
     Get {
         id: TicketId,
-        response_channel: todo!(),
+        response_channel: SyncSender<Option<Ticket>>,
     },
 }
 
@@ -49,14 +63,14 @@ fn server(receiver: Receiver<Command>) {
                 response_channel,
             }) => {
                 let id = store.add_ticket(draft);
-                todo!()
+                response_channel.send(id).unwrap();
             }
             Ok(Command::Get {
                 id,
                 response_channel,
             }) => {
                 let ticket = store.get(id);
-                todo!()
+                response_channel.send(ticket.cloned()).unwrap();
             }
             Err(_) => {
                 // There are no more senders, so we can safely break

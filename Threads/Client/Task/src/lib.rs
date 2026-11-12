@@ -1,5 +1,6 @@
 use crate::data::{Ticket, TicketDraft};
 use crate::store::{TicketId, TicketStore};
+use std::sync::mpsc;
 use std::sync::mpsc::{Receiver, Sender};
 
 pub mod data;
@@ -14,18 +15,27 @@ pub struct TicketStoreClient {
 impl TicketStoreClient {
     // Feel free to panic on all errors, for simplicity.
     pub fn insert(&self, draft: TicketDraft) -> TicketId {
-        todo!()
+        let (sender, receiver) = mpsc::channel();
+        let cmd = Command::Insert {
+            draft,
+            response_channel: sender,
+        };
+        self.sender.send(cmd).unwrap();
+        receiver.recv().unwrap()
     }
 
     pub fn get(&self, id: TicketId) -> Option<Ticket> {
-        todo!()
+        let (sender, receiver) = mpsc::channel();
+        let cmd = Command::Get { id, response_channel: sender };
+        self.sender.send(cmd).unwrap();
+        receiver.recv().unwrap()
     }
 }
 
 pub fn launch() -> TicketStoreClient {
     let (sender, receiver) = std::sync::mpsc::channel();
     std::thread::spawn(move || server(receiver));
-    todo!()
+    TicketStoreClient { sender }
 }
 
 // No longer public! This becomes an internal detail of the library now.

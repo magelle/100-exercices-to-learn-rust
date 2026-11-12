@@ -26,7 +26,7 @@ impl TicketStoreClient {
         Ok(response_receiver.recv().unwrap())
     }
 
-    pub fn get(&self, id: TicketId) -> Result<Option<Arc<Mutex<Ticket>>>, OverloadedError> { // TODO
+    pub fn get(&self, id: TicketId) -> Result<Option<Arc<RwLock<Ticket>>>, OverloadedError> { // TODO
         let (response_sender, response_receiver) = sync_channel(1);
         self.sender
             .try_send(Command::Get {
@@ -55,7 +55,7 @@ enum Command {
     },
     Get {
         id: TicketId,
-        response_channel: SyncSender<Option<Arc<Mutex<Ticket>>>>, // TODO
+        response_channel: SyncSender<Option<Arc<RwLock<Ticket>>>>, // TODO
     },
 }
 

@@ -7,7 +7,7 @@ pub struct TicketId(u64);
 
 #[derive(Clone)]
 pub struct TicketStore {
-    tickets: BTreeMap<TicketId, Arc<Mutex<Ticket>>>, // TODO
+    tickets: BTreeMap<TicketId, Arc<RwLock<Ticket>>>, // TODO
     counter: u64,
 }
 
@@ -28,14 +28,14 @@ impl TicketStore {
             description: ticket.description,
             status: Status::ToDo,
         };
-        let ticket = Arc::new(Mutex::new(ticket)); // TODO
+        let ticket = Arc::new(RwLock::new(ticket)); // TODO
         self.tickets.insert(id, ticket);
         id
     }
 
     // The `get` method should return a handle to the ticket
     // which allows the caller to either read or modify the ticket.
-    pub fn get(&self, id: TicketId) -> Option<Arc<Mutex<Ticket>>> { // TODO
+    pub fn get(&self, id: TicketId) -> Option<Arc<RwLock<Ticket>>> { // TODO
         self.tickets.get(&id).cloned()
     }
 }
